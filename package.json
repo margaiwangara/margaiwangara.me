@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "Code for my portfolio (Redesigned)",
+  "main": "dist/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/margaiwangara/portfolio.git"
+  },
+  "keywords": [
+    "margai",
+    "wangara",
+    "portfolio"
+  ],
+  "author": "Margai Wangara",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/margaiwangara/portfolio/issues"
+  },
+  "homepage": "https://github.com/margaiwangara/portfolio#readme",
+  "devDependencies": {
+    "parcel": "^2.0.0-nightly.732"
+  }
+}
