@@ -4,7 +4,8 @@
   "description": "Code for my portfolio (Redesigned)",
   "main": "dist/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,27 @@
   },
   "homepage": "https://github.com/margaiwangara/portfolio#readme",
   "devDependencies": {
-    "parcel": "^2.0.0-nightly.732"
+    "@parcel/transformer-sass": "2.0.0-nightly.734",
+    "autoprefixer": "^10.2.6",
+    "parcel": "^2.0.0-nightly.732",
+    "postcss": "^8.1.0"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "overrideBrowserslist": [
+          "> 1%",
+          "last 4 versions",
+          "ie >= 9"
+        ]
+      }
+    }
+  },
+  "targets": {
+    "main": false
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "notyf": "^3.10.0"
   }
 }
