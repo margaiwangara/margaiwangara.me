@@ -38,6 +38,16 @@ jobs:
       - name: List output files
         run: find dist/ -print
 
+      - name: Store build files as artifacts
+        uses: actions/upload-artifact@v2
+        run: |
+          mkdir -p build 
+          cp -RT dist build
+          find build/ -print
+        with:
+          name: build
+          path: build
+
   deploy:
     needs: [build]
     name: 🚀 Deploy app to ftp server
@@ -48,6 +58,15 @@ jobs:
         with:
           fetch-depth: 2
 
+      - name: Fetch build from artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: build
+
+      - name: Display structure of downloaded files
+        run: ls -R
+        working-directory: build
+
       - uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
           server: '${{ secrets.FTP_SERVER }}'
@@ -55,5 +74,5 @@ jobs:
           password: '${{ secrets.FTP_PASSWORD }}'
           protocol: ftps
           port: 21
-          local-dir: dist/
+          local-dir: build/
           server-dir: portfolio/
