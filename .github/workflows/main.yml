@@ -60,10 +60,14 @@ jobs:
         with:
           fetch-depth: 2
 
+      - name: Create build directory in workspace
+        run: mkdir build
+
       - name: Fetch build from artifact
         uses: actions/download-artifact@v2
         with:
           name: build
+          path: build
 
       - name: Display structure of downloaded files
         run: ls -R
