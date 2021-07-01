@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Basmati Rice",
+    "technologies": "HTML5, CSS3",
+    "screenshot": "../screenshots/bsm-official.png",
+    "links": {
+      "web": "https://margaiwangara.me/basmatirice",
+      "github": "https://github.com/margaiwangara/basmati-static"
+    }
+  },
+  {
+    "name": "Muziki",
+    "technologies": "HTML5, CSS3",
+    "screenshot": "../screenshots/muziki.png",
+    "links": {
+      "web": "https://margaiwangara.me/fotobucket",
+      "github": "https://github.com/margaiwangara/fotobucket"
+    }
+  },
+  {
+    "name": "FotoBucket",
+    "technologies": "HTML5, CSS3",
+    "screenshot": "../screenshots/fotobucket-official.png",
+    "links": {
+      "web": "https://margaiwangara.me/fotobucket",
+      "github": "https://github.com/margaiwangara/fotobucket"
+    }
+  },
+  {
+    "name": "Habari",
+    "technologies": "Express, MongoDB, React + Context API",
+    "screenshot": "../screenshots/accumulate-official.png",
+    "links": {
+      "web": "https://margaiwangara.me/fotobucket",
+      "github": "https://github.com/margaiwangara/fotobucket"
+    }
+  },
+  {
+    "name": "Mtandao",
+    "technologies": "Express, MongoDB, React + Redux",
+    "screenshot": "../screenshots/mtandao.png",
+    "links": {
+      "web": "https://margaiwangara.me/fotobucket",
+      "github": "https://github.com/margaiwangara/fotobucket"
+    }
+  },
+  {
+    "name": "Sinema",
+    "technologies": "Express, GraphQL, Redis, React",
+    "screenshot": "../screenshots/sinema.png",
+    "links": {
+      "web": "https://margaiwangara.me/fotobucket",
+      "github": "https://github.com/margaiwangara/fotobucket"
+    }
+  }
+]
