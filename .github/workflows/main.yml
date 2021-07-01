@@ -38,12 +38,14 @@ jobs:
       - name: List output files
         run: find dist/ -print
 
-      - name: Store build files as artifacts
-        uses: actions/upload-artifact@v2
+      - name: Create build folder and copy files from dist
         run: |
           mkdir -p build 
           cp -RT dist build
           find build/ -print
+
+      - name: Store build files as artifacts
+        uses: actions/upload-artifact@v2
         with:
           name: build
           path: build
