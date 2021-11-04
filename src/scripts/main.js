@@ -63,6 +63,18 @@ document.addEventListener('DOMContentLoaded', function () {
   const el = document.getElementById('date');
   el.innerHTML = new Date().getFullYear();
 
+  // smooth scroll
+  const href = document.getElementById('hire');
+  href.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = e.target.getAttribute('href');
+    const targetElement = document.querySelector(target);
+
+    targetElement.scrollIntoView({
+      behavior: 'smooth',
+    });
+  });
+
   // contact form
   makeContact();
 
