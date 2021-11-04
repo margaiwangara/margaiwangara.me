@@ -80,6 +80,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           source: 'build/*'
           target: ${{ secrets.TARGET_DIR }}
+          strip-components: 1
+          overwrite: true
 
       # - uses: SamKirkland/FTP-Deploy-Action@4.1.0
       #   with:
